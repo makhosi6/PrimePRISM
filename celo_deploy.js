@@ -20,7 +20,7 @@ async function awaitWrapper(){
     })
 
     const receipt = await tx.waitReceipt()
-    console.log(receipt)
+    console.log({receipt})
 }
 
 awaitWrapper()

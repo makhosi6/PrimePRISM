@@ -26,8 +26,8 @@ contract InsuranceProvider {
         lifeCoverInsurance = new LifeCoverInsurance(_oracleAddress, _minimumCoverageAmount, _maximumCoverageAmount);
     }
 
-    function purchasePolicy(string memory _insuredName, uint256 _coverageAmount) public payable onlyOwner isContract(msg.sender) {
-        lifeCoverInsurance.purchasePolicy{value: msg.value}(_insuredName, _coverageAmount);
+    function purchasePolicy(string memory _insuredID, uint256 _coverageAmount) public payable onlyOwner isContract(msg.sender) {
+        lifeCoverInsurance.purchasePolicy{value: msg.value}(_insuredID, _coverageAmount);
     }
 
     function fileClaim(uint256 _policyIndex, uint256 _deathTimestamp) public onlyOwner {
