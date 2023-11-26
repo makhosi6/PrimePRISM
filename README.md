@@ -26,20 +26,22 @@ The API provides endpoints for interacting with the life insurance smart contrac
 
   **Request:**
 
-  ````json
+  ```json
   {
-  "policyHolder": "0x123abc",
-  "premiumAmount": 50,
-  "coverageAmount": 100,
-  "tokenAddress": "0xYourTokenAddress" // payments processed via automated withdrawals or sweep transactions
+    "policyHolder": "0x123abc",
+    "premiumAmount": 50,
+    "coverageAmount": 100,
+    "tokenAddress": "0xYourTokenAddress" // payments processed via automated withdrawals or sweep transactions
   }
+  ```
 
-  **Response**
+**Response**
+
   ```json
   {
   "transactionHash": "0xTransactionHash"
   }
-  ````
+````
 
 - Endpoint 2: `POST /api/file-claim`
 
