@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 const apiBasePath = '/api';
-const web3 = new Web3('https://your-ethereum-node-url'); // Replace with your Ethereum node URL
+const web3 = new Web3('https://alfajores-forno.celo-testnet.org');
 const contractAddress = '0xYourContractAddress'; // Replace with the actual address of your deployed contract
 const contract = new web3.eth.Contract(LifeCoverInsuranceABI, contractAddress);
 
